@@ -51,8 +51,8 @@
  var responseBody = response.getBody();
  var httpStatus = response.getStatusCode();
 		
-//convert the JSON formatted string to a JavaScript Object
- var responseObj = JSON.parse(responseBody);
+//convert the JSON formatted string to a JavaScript Object 
+var responseObj = JSON.parse(responseBody);
 //set the value of the City field on the IPAddressInfo record
 current.city = responseObj.city;
 gs.info("City = " + current.city);
@@ -70,7 +70,7 @@ catch(err) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>557b653547420110caa4fb42e36d43be</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Populate IP Address City</sys_name>
         <sys_overrides/>
         <sys_package display_value="IPLookup" source="x_674270_iplookup">99ae59f147020110caa4fb42e36d4368</sys_package>
@@ -78,7 +78,7 @@ catch(err) {
         <sys_scope display_value="IPLookup">99ae59f147020110caa4fb42e36d4368</sys_scope>
         <sys_update_name>sys_script_557b653547420110caa4fb42e36d43be</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-03-16 00:09:56</sys_updated_on>
+        <sys_updated_on>2022-03-20 03:17:09</sys_updated_on>
         <template/>
         <when>async_always</when>
     </sys_script>
